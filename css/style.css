@@ -1,0 +1,28 @@
+body {
+  background-color: #621402;
+}
+
+.menu-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.nav,
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+ul li {
+  margin-right: 25px;
+}
+
+ul li:last-child {
+  margin: 0;
+}
