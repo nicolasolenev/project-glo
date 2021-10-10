@@ -22,23 +22,19 @@
 }
 
 body {
-  background-color: #621402;
   color: #fff;
   font-family: Roboto;
   font-size: 16px;
   line-height: 150%;
-  background: url(../img/bg.png) no-repeat center;
+  background: #621402 url(../img/bg.png) no-repeat center top;
   background-size: cover;
-}
-main {
-  height: 100vh;
 }
 
 .header-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 38px;
+  padding-top: 38px;
   margin-bottom: 90px;
 }
 
@@ -153,6 +149,7 @@ ul li:last-child {
   border-left: none;
   border-right: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -231,4 +228,72 @@ ul li:last-child {
   min-width: 108px;
   margin-right: 62px;
   margin-bottom: 79px;
+}
+
+.scheme {
+  background: rgba(36, 36, 36, 0.18);
+  border-radius: 10px;
+  margin-top: 63px;
+  margin-bottom: 77px;
+}
+
+.scheme path:not(.light) {
+  fill: rgba(255, 255, 255, 0.2);
+}
+
+.scheme path:not(.light):hover {
+  fill: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.scheme path.booked,
+.scheme path.booked:hover {
+  fill: rgba(255, 255, 255, 0.05);
+  cursor: not-allowed;
+}
+
+.scheme path.active,
+.scheme path.active:hover {
+  fill: #fe8e05;
+}
+
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 0 76px;
+}
+
+.legend {
+  margin: 22px 0 38px 70px;
+}
+
+.price {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-label {
+  display: block;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 12px;
+}
+
+.price-tag {
+  font-size: 52px;
+  line-height: 61px;
+}
+
+.button {
+  display: block;
+  padding: 24px 52px;
+  background: #fe8e05;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
 }
